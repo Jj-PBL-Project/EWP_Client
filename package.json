@@ -1,0 +1,16 @@
+{
+  "name": "ewp_client",
+  "version": "1.0.0",
+  "description": "2024 Jj Univ's PBL Project / Team 3's Client git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "성민우",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^33.2.0"
+  }
+}
