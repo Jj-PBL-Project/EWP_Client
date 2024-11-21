@@ -5,12 +5,33 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build",
+    "build:win": "npm run build -- -w",
+    "build:mac": "npm run build -- -m",
+    "build:linux": "npm run build -- -l"
+  },
+  "build": {
+    "productName": "EWP",
+    "appId": "com.ewp.hello",
+    "asar": true,
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
   "keywords": [],
   "author": "성민우",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^33.2.0"
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
   }
 }

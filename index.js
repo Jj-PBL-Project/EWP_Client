@@ -4,6 +4,7 @@ function createWindow() {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
+        icon: "./icon.png"
     });
 
     win.loadURL('http://127.0.0.1:3000/src/index.html');
