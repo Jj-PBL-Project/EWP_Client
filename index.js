@@ -7,7 +7,7 @@ function createWindow() {
         icon: "./icon.png"
     });
 
-    win.loadURL('http://127.0.0.1:3000/src/index.html');
+    win.loadURL('http://202.31.246.48');
 };
 
 app.whenReady().then(() => {
