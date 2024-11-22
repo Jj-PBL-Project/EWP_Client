@@ -7,7 +7,7 @@ function createWindow() {
         icon: "./icon.png"
     });
 
-    win.loadURL('http://202.31.246.48');
+    win.loadURL('https://ewp.devist.me/');
 };
 
 app.whenReady().then(() => {
